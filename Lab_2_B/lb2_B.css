@@ -19,12 +19,13 @@
     max-width: 500px;
     min-height: 150px;
     padding-top: 10px;
-    background-color: wheat;
+    background-color: white;
+    color: #333;
 }
 
-.delete{
+.n-input img{
     position:absolute;
     bottom: 15px;
     right: 15px;
-
+    cursor: pointer;
 }
