@@ -29,3 +29,10 @@
     right: 15px;
     cursor: pointer;
 }
+
+.n-input select{
+    position:absolute;
+    bottom: 15px;
+    right: 60px;
+    cursor: pointer;
+}
