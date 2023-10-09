@@ -6,7 +6,6 @@ let notes = document.querySelectorAll(".n-input");
 
 function updateDB(){
     localStorage.setItem("notes", notestainer.innerHTML);
-
 }
 
 btnADD.addEventListener("click", ()=>{
@@ -26,16 +25,19 @@ btnADD.addEventListener("click", ()=>{
     
     notestainer.appendChild(input).appendChild(drbox);
     let option = document.createElement("option");
+    option.id = "colid1"
     option.value="red";
     option.text="Red";
     drbox.appendChild(option);
 
     let option2 = document.createElement("option");
+    option2.id = "colid2"
     option2.value="green";
     option2.text="Green";
     drbox.appendChild(option2);
 
     let option3 = document.createElement("option");
+    option3.id = "colid3"
     option3.value="blue";
     option3.text="Blue";
     drbox.appendChild(option3);
