@@ -1,24 +1,26 @@
-#h1-1{
-    text-align: center;
-}
+
 
 .input{
     width: 50%;
-    height: 60px;
+    height: 150px;
     margin: auto;
+    display: block;
     text-align: center;
+    border-radius: 25px;
+    border:solid #006666 ;
     background-color: #ADD8E6;
-    position: relative;
-    
+    position: relative;    
 }
 
 .in{
-  
-    height: 20px;
+    position: relative;
+    height: 30px;
     font-size: 15px;
-    
+    top:65px ;
+}
 
-
+.Search{
+right: 50%;
 }
 
 .info-grid {
@@ -27,17 +29,20 @@
     margin:auto;
     height:50px;
     width: 50%;
-   
     grid-template-rows: repeat(1,1fr);
     grid-template-columns: repeat(3,1fr);
   }
 
   .info-grid > div{
-    
     text-align: center;
-    
     border:solid black;
     box-sizing: border-box;
- 
-
   }
+
+/* Styling */
+#h1-1{
+    text-align: center;
+}
+#h2-1{
+    text-align: center;
+}
