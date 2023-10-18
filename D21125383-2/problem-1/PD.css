@@ -18,11 +18,17 @@
     font-size: 15px;
     top:65px ;
 }
-
-.Search{
-right: 50%;
+.form1{
+    text-align: center;
+    padding: 50px;
+    
 }
 
+.form1 > input{
+    height: 20px;
+    font-size: 13px;
+    
+}
 .info-grid {
     
     display: grid;
