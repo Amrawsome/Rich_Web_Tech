@@ -3,15 +3,18 @@
 <head>    
     <meta charset="UTF-8">  
     <link rel ="stylesheet" href="PD.css">
+    <script defer src="PD.js"></script>
     <H1 id = "h1-1">Phone Directory</H1>
 </head>
 <body>
+    <div id="error"></div>
     <div class = "input">
-        <div id = "form">
-            <form >
-                <input type="text" name="in_Name" class = "in" placeholder="Name" />
-                <input type="text" name="in_Mobile" class="in" placeholder="Mobile Number" />
-                <input type="text" name="in_Email" class="in" placeholder="Email Address" />
+      
+        <div id = "form_Div">
+            <form id="form">
+                <input type="text" name="in_Name" class = "in" placeholder="Name" id = "id_Name" />
+                <input type="text" name="in_Mobile" class="in" placeholder="Mobile Number" id="id_Mobile" />
+                <input type="text" name="in_Email" class="in" placeholder="Email Address" id ="id_Email" />
                 <input type="submit" value="Add Contact" class="in" />
             </form>
         </div>
