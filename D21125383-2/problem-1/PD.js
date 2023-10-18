@@ -5,6 +5,7 @@ const errorM = document.getElementById("error");
 const form = document.getElementById("form");
 
 form.addEventListener('submit',(e) => {
+    e.preventDefault();
     let message = [];
     let reg_Name = /[^a-zA-Z ]/;
     let reg_Mobile = /[^0-9]/;
@@ -53,4 +54,36 @@ form.addEventListener('submit',(e) => {
         e.preventDefault();
         errorM.innerHTML = message.join(', ');
     }
+
+    if (message.length<1){
+    //creating table
+    let table = document.getElementById("tableBody");
+   
+      // Create row element
+      let row = document.createElement("tr")
+      
+      // Create cells
+      let c1 = document.createElement("td")
+      let c2 = document.createElement("td")
+      let c3 = document.createElement("td")
+     
+      
+      // Insert data to cells
+      c1.innerText = id_name.value
+      c2.innerText = mobile_Num.value
+      c3.innerText = email.value
+      
+      
+      // Append cells to row
+      row.appendChild(c1);
+      row.appendChild(c2);
+      row.appendChild(c3);
+      
+      
+      // Append row to table body
+      table.appendChild(row)
+    }
 })
+
+
+
