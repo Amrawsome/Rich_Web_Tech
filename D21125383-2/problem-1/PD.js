@@ -154,7 +154,7 @@ function sortTable(n) {
   function Search(n) {
 
     var input, filter, table, tr, td, i, txtValue;
-    const noreuslt = document.getElementById(noResult);
+    const noreuslt = document.getElementById("noResult");
     input = document.getElementById("contactSearch");
     filter = input.value.toUpperCase();
     table = document.getElementById("mytable");
@@ -168,9 +168,9 @@ function sortTable(n) {
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
           tr[i].style.display = "";
         } 
-        else if(txtValue.toUpperCase().indexOf(filter) === 0) {
+        else if(txtValue.toUpperCase().indexOf(filter)== -1) {
           message.push("No Result")
-          noreuslt.innerHTML = "hello";
+          noreuslt.innerHTML = message;
           alert("working");
         }
         else {
