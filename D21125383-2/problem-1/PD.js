@@ -122,13 +122,13 @@ function sortTable(n) {
         y = rows[i + 1].getElementsByTagName("TD")[n];
        
         if (dir == "asc") {
-          if (Number(x.innerHTML) > Number(y.innerHTML)) {
+          if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
            
             shouldSwitch = true;
             break;
           }
         } else if (dir == "desc") {
-          if (Number(x.innerHTML) <  Number(y.innerHTML)) {
+          if (x.innerHTML.toLowerCase() <  y.innerHTML.toLowerCase()) {
             
             shouldSwitch = true;
             break;
@@ -172,6 +172,7 @@ function sortTable(n) {
           message.push("No Result")
           noreuslt.innerHTML = "hello";
           alert("working");
+        }
         else {
           tr[i].style.display = "none";
         }
