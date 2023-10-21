@@ -15,3 +15,38 @@
     margin-left: 5vw;
     font-size: 20px;
 }
+.parent{
+    display: inline-flex;
+}
+
+
+
+.user_Details{
+    background-color: aquamarine;
+    width:auto ;
+    height: auto;
+    border: solid black 2px;
+}
+
+
+.user_Details  img{
+    height: 45vh;
+    width: 38vw;
+   margin-left: 15px;
+   
+}
+
+.user_Details input{
+    font-size: 3vh;
+    height: 7vh;
+    width: 40vw;
+}
+
+
+.repository_Details{
+    
+}
+
+#div_border{
+    border: solid black 1px;
+}
