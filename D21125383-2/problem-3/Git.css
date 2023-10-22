@@ -44,7 +44,8 @@
 
 
 .repository_Details{
-    
+    position: absolute;
+    right: 30vw;
 }
 
 #div_border{

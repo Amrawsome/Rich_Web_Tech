@@ -9,21 +9,25 @@ const NOG = document.getElementById("user_Gists");
 
 
 submit.addEventListener('click', (e) => {
-    const userName = UnameInput.value;
+   
     e.preventDefault();//stops page refresh on button hit
 
-    fetch(`https://api.github.com/users/${userName}`)
-        .then(response => response.json())
-        .then(data => {
-            Avatar.src = data.avatar_url;
-            Name.value = data.name;
-            Uname.value = data.login || 'Not Available';
-            Email.value = data.email || 'Not Available';
-            Loc.value = data.location || 'Not Available';
-            NOG.value = data.public_gists || 'Not Available';
-
-        })
+   detailRetrevial();
         
+    
         
 })
 
+async function detailRetrevial(){
+    const userName = UnameInput.value;
+    fetch(`https://api.github.com/users/${userName}`)
+    .then(response => response.json())
+    .then(data => {
+        Avatar.src = data.avatar_url;
+        Name.value = data.name;
+        Uname.value = data.login || 'Not Available';
+        Email.value = data.email || 'Not Available';
+        Loc.value = data.location || 'Not Available';
+        NOG.value = data.public_gists || 'Not Available';
+    })
+}
