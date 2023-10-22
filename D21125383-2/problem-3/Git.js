@@ -23,7 +23,7 @@ submit.addEventListener('click', (e) => {
             NOG.value = data.public_gists || 'Not Available';
 
         })
-        console.log(userName);
+        
         
 })
 
