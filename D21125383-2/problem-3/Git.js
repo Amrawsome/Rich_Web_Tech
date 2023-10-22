@@ -6,6 +6,9 @@ const Uname = document.getElementById("user_Uname");
 const Email = document.getElementById("user_Email");
 const Loc = document.getElementById("user_Location");
 const NOG = document.getElementById("user_Gists");
+const repoList = document.getElementById("repo_list");
+
+
 
 
 submit.addEventListener('click', (e) => {
@@ -13,7 +16,7 @@ submit.addEventListener('click', (e) => {
     e.preventDefault();//stops page refresh on button hit
 
    detailRetrevial();
-        
+   repositoryRetrevial();
     
         
 })
@@ -29,5 +32,26 @@ async function detailRetrevial(){
         Email.value = data.email || 'Not Available';
         Loc.value = data.location || 'Not Available';
         NOG.value = data.public_gists || 'Not Available';
+    })
+}
+
+async function repositoryRetrevial(){
+    const userName = UnameInput.value;
+    fetch(`https://api.github.com/users/${userName}/repos`)
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(repo => {
+            const cell  = document.createElement('div');
+            const cellRepN = document.createElement('p');
+            const cellRepD = document.createElement('p'); 
+            
+            cellRepN.textContent = repo.name;
+            cellRepD.textContent = repo.description || "Not Available";
+            
+            cell.appendChild(cellRepN);
+            cell.appendChild(cellRepD);
+            repoList.appendChild(cell);
+            
+        });
     })
 }
