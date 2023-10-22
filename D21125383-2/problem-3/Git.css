@@ -45,9 +45,21 @@
 
 .repository_Details{
     position: absolute;
-    right: 30vw;
+    right: 1vw;
+    font-size: 25px;
+    height: 70vh;
+    width: 50vw;
+}
+
+.repository_Details div {
+    border: solid black 1px;
 }
 
 #div_border{
     border: solid black 1px;
+}
+
+#repo_list{
+    height: 70vh;
+    width: 50vw;
 }
