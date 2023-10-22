@@ -13,14 +13,10 @@ let count = 0;
 
 
 submit.addEventListener('click', (e) => {
-   
     e.preventDefault();//stops page refresh on button hit
-
-   detailRetrevial();
-   repositoryRetrevial();
-    
-        
-})
+    detailRetrevial();
+    repositoryRetrevial();   
+});
 
 async function detailRetrevial(){
     const userName = UnameInput.value;
@@ -28,11 +24,11 @@ async function detailRetrevial(){
     .then(response => response.json())
     .then(data => {
         Avatar.src = data.avatar_url;
-        Name.value = data.name;
+        Name.value = data.name || "Not Available";
         Uname.value = data.login || 'Not Available';
         Email.value = data.email || 'Not Available';
         Loc.value = data.location || 'Not Available';
-        NOG.value = data.public_gists || 'Not Available';
+        NOG.value = data.public_gists
     })
 }
 
@@ -40,6 +36,7 @@ async function repositoryRetrevial(){
     const userName = UnameInput.value;
     const rName = "Name:"
     const rDesc = "Description:";
+    repoList.innerHTML="";
     fetch(`https://api.github.com/users/${userName}/repos`)
     .then(response => response.json())
     .then(data => {
