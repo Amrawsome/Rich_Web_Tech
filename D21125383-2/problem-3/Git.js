@@ -7,6 +7,7 @@ const Email = document.getElementById("user_Email");
 const Loc = document.getElementById("user_Location");
 const NOG = document.getElementById("user_Gists");
 const repoList = document.getElementById("repo_list");
+let count = 0;
 
 
 
@@ -37,21 +38,27 @@ async function detailRetrevial(){
 
 async function repositoryRetrevial(){
     const userName = UnameInput.value;
+    const rName = "Name:"
+    const rDesc = "Description:";
     fetch(`https://api.github.com/users/${userName}/repos`)
     .then(response => response.json())
     .then(data => {
         data.forEach(repo => {
+            count++;
             const cell  = document.createElement('div');
             const cellRepN = document.createElement('p');
             const cellRepD = document.createElement('p'); 
             
-            cellRepN.textContent = repo.name;
-            cellRepD.textContent = repo.description || "Not Available";
+            cellRepN.textContent = rName+" "+repo.name;
+            cellRepD.textContent = rDesc+" "+repo.description || "Not Available";
             
             cell.appendChild(cellRepN);
             cell.appendChild(cellRepD);
             repoList.appendChild(cell);
             
         });
+        if(count > 5){
+            repoList.style.overflowY="auto";
+        }
     })
 }
