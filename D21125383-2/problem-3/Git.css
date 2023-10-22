@@ -11,9 +11,9 @@
 
 .git_S{
     height: 5vh;
-    width: 10vh;
+    width: 10vw;
     margin-left: 5vw;
-    font-size: 20px;
+    font-size: 2vw ;
 }
 .parent{
     display: inline-flex;
