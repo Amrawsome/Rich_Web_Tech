@@ -10,7 +10,6 @@ const NOG = document.getElementById("user_Gists");
 const repoList = document.getElementById("repo_list");
 const rName = "Name:"
 const rDesc = "Description:";
-let count = 0;
 
 //running functions upon button press retrieving and displaying information
 submit.addEventListener('click', (e) => {
@@ -34,9 +33,8 @@ async function detailRetrevial(){
 async function repositoryRetrevial(){
     repoList.innerHTML="";//resets the list on run
         let data = await retrieveRepoDetails();//retrieves repo details
-        //for each loop going through all repos and creating and appending a display for the data
-        const repoElements  = data.map((repo) => {
-            count++;//adds to a count to check the number of repos 
+        //map going through all repos and creating and appending a display for the data
+        const repoElements  = data.map((repo) => { 
             //creates the elements for diplay
             const cell  = document.createElement('div');
             const cellRepN = document.createElement('p');
@@ -48,12 +46,15 @@ async function repositoryRetrevial(){
             cell.appendChild(cellRepN);
             cell.appendChild(cellRepD);
             repoList.appendChild(cell);
-
+            //gets the completed cell back
             return cell;
         });
-        //checks if the number of repos is more than 5 to start a scroll list
-        if(count > 5){
+        //checks if the number of repos is more than 5 to start a scroll list if not 
+        if(data.length > 5){
             repoList.style.overflowY="auto";
+        }
+        else{
+            repoList.style.overflowY = "unset"
         }
     
 }
