@@ -35,7 +35,7 @@ async function repositoryRetrevial(){
     repoList.innerHTML="";//resets the list on run
         let data = await retrieveRepoDetails();//retrieves repo details
         //for each loop going through all repos and creating and appending a display for the data
-        data.forEach(repo => {
+        const repoElements  = data.map((repo) => {
             count++;//adds to a count to check the number of repos 
             //creates the elements for diplay
             const cell  = document.createElement('div');
@@ -48,6 +48,8 @@ async function repositoryRetrevial(){
             cell.appendChild(cellRepN);
             cell.appendChild(cellRepD);
             repoList.appendChild(cell);
+
+            return cell;
         });
         //checks if the number of repos is more than 5 to start a scroll list
         if(count > 5){

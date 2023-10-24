@@ -157,7 +157,7 @@ function Search(n) {
     //if there is data get the content or the text
     if (td) {
       txtValue = td.textContent || td.innerText;
-      //filter through data using search input and set data to blank if it is no the searched data
+      //filter through data using search input and set data to blank if it is not the searched data
       if (txtValue.toUpperCase().indexOf(filter) > -1) {
         tr[i].style.display = "";
       }
