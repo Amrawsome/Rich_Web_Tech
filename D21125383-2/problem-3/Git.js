@@ -49,7 +49,7 @@ async function repositoryRetrevial(){
             //gets the completed cell back
             return cell;
         });
-        //checks if the number of repos is more than 5 to start a scroll list if not 
+        //checks if the number of repos is more than 5 to start a scroll list if not set overrflow unset(no scroll list)
         if(data.length > 5){
             repoList.style.overflowY="auto";
         }
