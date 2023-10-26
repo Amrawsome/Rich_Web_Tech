@@ -29,7 +29,6 @@ async function WFM(){
   const posts = await retrievePost();//get data
   const bodyText = posts.map(post => post.body).join(' ');//join all bodies together but seperate by a space
   const words = bodyText.split(/\s+/); //split using whitespace to divide all words
-
   //checks the words array and adds words to frequency map and set its count to 1, if its not there add it otherwise add to the word count
   const wordFrequencyMap = words.reduce((map, word) => {
     map[word] = (map[word] || 0) + 1;
