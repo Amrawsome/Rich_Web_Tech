@@ -38,7 +38,7 @@
 
 .user_Details input{
     font-size: 3vh;
-    height: 6.5vh;
+    height: 6vh;
     width: 40vw;
 }
 
@@ -67,4 +67,8 @@
 
 #UP_title{
     width: 20vw;
+}
+
+#R_title{
+    font-size: 25px;
 }

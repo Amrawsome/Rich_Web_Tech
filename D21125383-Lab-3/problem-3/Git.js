@@ -16,6 +16,7 @@ submit.addEventListener('click', (e) => {
     e.preventDefault();//stops page refresh on button hit
     detailRetrevial();//gets and displays user details
     repositoryRetrevial();//gets and displays repo details
+    UnameInput.value = "";
 });
 
 
