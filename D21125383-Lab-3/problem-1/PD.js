@@ -27,7 +27,7 @@ form.addEventListener('submit',(e) => {
   //checks that name field is only letters
   if (reg_Name.test(id_name.value)){
     document.getElementById("error").style.visibility = "visible"; 
-    message.push("Please enter letters only")
+    message.push("Please enter letters only for Name")
   }
   //Mobile Val
   //makes sure mobile field isnt empty
@@ -43,7 +43,7 @@ form.addEventListener('submit',(e) => {
   //ensures that mobile numbers is digits only
   if (reg_Mobile.test(mobile_Num.value)){
     document.getElementById("error").style.visibility = "visible"; 
-    message.push("Please enter numbers only")
+    message.push("Please enter numbers only for Mobile ")
   }
   //Email Val
   //email field is not empty
@@ -54,7 +54,7 @@ form.addEventListener('submit',(e) => {
   //email can't be longer than 40 char
   if(email.value.length >40){
     document.getElementById("error").style.visibility = "visible"; 
-    message.push("Names must be less than 40 characters");
+    message.push("Email must be less than 40 characters");
   }
   //Ensures email regex is followed
   if (email.value !== '' && email_Check==false){
