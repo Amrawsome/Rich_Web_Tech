@@ -59,7 +59,9 @@ clickNotestainer.subscribe((e) => {
     }
 });
 
-notestainer.addEventListener("change", function (e) {
+const changeNotestainer = rxjs.fromEvent(notestainer,'change');
+
+changeNotestainer.subscribe((e) => {
     if (e.target.className === "colors") {
         let id = e.target.parentNode.id;
         let check = e.target;
