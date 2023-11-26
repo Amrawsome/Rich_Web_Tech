@@ -18,6 +18,7 @@ The operators that stream libraries provide prove to be a great tool to transfor
 Resource Management-
 
 Streams allowing things like the action to unsubscribe from an operation when it is ongoing. This helps to manage resources and avoid memory leaks.
+
 	
  Con:
 	Pickup Time-
