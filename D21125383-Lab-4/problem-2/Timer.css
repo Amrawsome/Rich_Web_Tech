@@ -22,22 +22,19 @@
     font-size: 4vw;
 }
 #inputHours{
-    width: 5vw;
-    height: 7vh;
-    font-size: 4vw;
-    text-align: center;
-    }
+width: 5vw;
+height: 7vh;
+font-size: 4vw;
+}
 #inputMinutes{
     width: 5vw;
     height: 7vh;
     font-size: 4vw;
-    text-align: center;
 }
 #inputSeconds{
     width: 5vw;
     height: 7vh;
     font-size: 4vw;
-    text-align: center;
 }
 #startButton{
     margin-top: 10px;
@@ -52,4 +49,6 @@ font-size: 2vw;
     height: 20vh;
     top: 62%;
     left: 24%;
+    font-size: 4vw;
+    text-align: center;
 }
