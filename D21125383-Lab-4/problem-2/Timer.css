@@ -25,20 +25,31 @@
     width: 5vw;
     height: 7vh;
     font-size: 4vw;
+    text-align: center;
     }
 #inputMinutes{
     width: 5vw;
     height: 7vh;
     font-size: 4vw;
+    text-align: center;
 }
 #inputSeconds{
     width: 5vw;
     height: 7vh;
     font-size: 4vw;
+    text-align: center;
 }
 #startButton{
     margin-top: 10px;
 width: 20vw;
 height: 6vh;
 font-size: 2vw;
+}
+#tmbox{
+    position:absolute;
+    background-color: #d3d3d3;
+    width: 52vw;
+    height: 20vh;
+    top: 62%;
+    left: 24%;
 }
