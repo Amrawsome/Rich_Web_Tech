@@ -6,7 +6,9 @@ Question: Explain what is meant by the stream abstraction. What is the relations
 The relationship between streams and the observer pattern is that both are used to get data and have consumers and producers. Collections that arrive over time are streams they handle a single event, where observers use observables which work with multiple values asynchronously. Streams are pulling based meaning the data consumer gets the data from the producer when it chooses whereas observables are push based and the producer decides when the consumer gets the data. I conclusion the relationship is based on data transfer but handle if differently.
 Streams are useful in modelling if we have the problem of trying to access data that can live in a few remote locations. We might use them in rich web development if we want to reduce a stream processing issue by using a merged set of one or more data streams for example mouse clicks, keyboard input and DOM state changes, all of these can be processed within the same logical structure using the same semantics.
 
+
 Assume that you are building an interface to an API in your Rich Web App. Describe in detail how you could use the RxJS library to handle asynchronous network responses to API requests. In your opinion, what are the benefits to using a streams library for networking over, say, promises? And what do you think are the downsides?
+
 2.	How you could use RxJS to handle asynchronous network responses to API requests is to first install RxJs on your system. After this you can use ajax functions to make HTTP requests. Next, you’re going to want to set up an Observable to handle the API’s asynchronous requests, subscribing to the observable will then initiate the request and react to incoming data. Next RxJS provides operators to transform or combine requests like filter or map. 
 Pro:
 Operators or transformation-
@@ -20,6 +22,7 @@ Streams allowing things like the action to unsubscribe from an operation when it
 have a hard time learning streams compared to promises. This is because subscribing, and observables are complicated and can be hard to get your head around.
 Overthinking/Overuse- 
 Streams can be very useful for handling/ reading data but sometimes the simpler approach can be better. Promises in certain cases are more useful and, in that case, streams may just make the code more complex.
+
 
 Consider three asynchronous tasks, A, B & C. What are the consequences of these functions sharing global state? What is a good practice to alleviate any problems associated with this?
 3.	Consequences Of Sharing Global State:
