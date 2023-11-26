@@ -18,7 +18,8 @@ The operators that stream libraries provide prove to be a great tool to transfor
 Resource Management-
 
 Streams allowing things like the action to unsubscribe from an operation when it is ongoing. This helps to manage resources and avoid memory leaks.
-	Con:
+	
+ Con:
 	Pickup Time-
  	What I mean by this is that is someone who is new to reactive programming might 
 have a hard time learning streams compared to promises. This is because subscribing, and observables are complicated and can be hard to get your head around.
