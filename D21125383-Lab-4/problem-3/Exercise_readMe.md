@@ -45,6 +45,7 @@ Good Practices:
 Encapsulation-
 
 The use of encapsulation in this case is a good practice because instead of using the global state as a crutch. Allowing each task to use their own variables may stop actions that could be unpredictable with global use.
+
 Observables-
 
 Using observables can be a good practice when using global state as it allows for good management of asynchronous data streams in things like operators.  
