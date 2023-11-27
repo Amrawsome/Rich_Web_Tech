@@ -10,7 +10,14 @@ const timerContainer = document.getElementById("timer");
     }
 
     function updateTimerDisplay(hours, minutes, seconds) {
+
       tmbox.textContent = `${formatTime(hours)}:${formatTime(minutes)}:${formatTime(seconds)}`;
+          if(hours==0){
+            tmbox.textContent=`${formatTime(minutes)}:${formatTime(seconds)}`;
+          }
+          if(hours==0&&minutes==0){
+            tmbox.textContent=`${formatTime(seconds)}`;
+          }
     }
 
     let countdownTime = 0; // Initial countdown time
