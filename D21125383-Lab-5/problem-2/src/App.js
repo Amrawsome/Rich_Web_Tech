@@ -6,7 +6,7 @@ const NoteApp = () => {
   //retrieve api information
   useEffect(() => {
         const limit = 1;
-        const apiKey = 'don't want stoles';
+        const apiKey = '';
     
         $.ajax({
           method: 'GET',
