@@ -27,15 +27,17 @@ body{
 }
 
 .n-input {
-  width: 10vw;
+  width: 40vw;
+  height: 25vh;
   position: relative;
-  max-width: 500px;
+  max-width: 70vw;
   min-height: 150px;
   padding-top: 10px;
   background-color: white;
   color: #333;
   margin-right: 10px;
   margin-bottom: 2vh;
+  overflow-x: hidden;
 }
 
 .n-input img {
