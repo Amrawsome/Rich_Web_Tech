@@ -70,6 +70,8 @@ Disadvantage:
 The Learning curve on streams is steep due to its complexity 
 
 4.With the aid of a diagram and example code, describe the Cascading Style Sheets (CSS) Box Model and show how it can be used to space DOM elements
+
+
  ![css_box_model](css_box_model.png)
 
 5.Detail how the browser loads and bootstraps a rich web application from an initial URL.
