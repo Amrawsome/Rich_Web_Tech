@@ -4,6 +4,7 @@ React JS?
 Props are data passed into a react component. Props are a part of pure functions; you can't change a component modifying its own props.
 The following function shows the use of props.
 The car function takes props as an argument and in this case the garage function uses the car function and sets the brand prop to ford so the result will be "Who lives in my garage" then "I am a Ford".
+```
 function Car(props) {
 return <h2>I am a { props.brand }!</h2>;
 }
@@ -16,7 +17,7 @@ return (
 );
 }
 ReactDOM.render(<Garage />, document.getElementById('root'));
-
+```
 The state is a built-in React object that is used to contain data or information about the component. A component’s state can change over time; whenever it changes, the component re-renders.
 The code below uses states to hold and change the name state to have it displayed.
 The state starts as having name as "World" once update name starts it changes the state name to Simplilearn so once rendering begins it will display the state name in the this not statename. So, in short states hold info in this case name and can be changed by setting the state to something new and the new info will be displayed when it’s called.  
