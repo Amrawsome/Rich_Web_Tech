@@ -20,6 +20,7 @@ ReactDOM.render(<Garage />, document.getElementById('root'));
 The state is a built-in React object that is used to contain data or information about the component. A component’s state can change over time; whenever it changes, the component re-renders.
 The code below uses states to hold and change the name state to have it displayed.
 The state starts as havving name as "World" once update name starts it changes the state name to Simplilearn so once rendering begins it will display the state name in the this not statename. So in short states hold info in this case name and can be changed by setting the state to something new and the new info will be displayed when its called.  
+```
 class Greetings extends React.Component {
   state = {
     name: "World"
@@ -33,7 +34,7 @@ class Greetings extends React.Component {
       )
   }
 }
-
+```
 
 2.In functional programming, what does the term functor mean? Can you give
 an example in JavaScript?
@@ -79,18 +80,21 @@ The CSS Box Model is in essence a box that wraps around all html elements. Conte
 
 
  HTML:
+ ```
 <!DOCTYPE HTML>
 <html lang="en">
 <head>    
- <meta charset="UTF-8">   
+<meta charset="UTF-8">   
 <div>
 <p>Name: 30daysoflaptops.github.io</p>
 <p>Description: null</p>
 </div>   
 </body>
 </html>
-
+```
 Before
+
+
 ![box_model_1](box_model_1.png)
 
 CSS:
@@ -100,6 +104,8 @@ CSS:
 
 
 After
+
+
 ![box_model_2](box_model_2.png)
 
 As you can see from the pitures above the text is attached to the left side but when you add margin styling to the element it pushes the element from the left out because the left side of the box is pushed out.
