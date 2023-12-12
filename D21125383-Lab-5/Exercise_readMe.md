@@ -104,4 +104,7 @@ After
 
 ![box_model_2](box_model_2.png)
 
-As you can see from the pictures above the text is attached to the left side but when you add margin styling to the element it pushes the element from the left out because the left side of the box is pushed out.
+As you can see from the pictures above the text is attached to the left side but when you add margin styling to the element it pushes the
+element from the left out because the left side of the box is pushed out.
+
+5.Detail how the browser loads and bootstraps a rich web application from an initial URL.
