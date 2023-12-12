@@ -108,3 +108,16 @@ As you can see from the pictures above the text is attached to the left side but
 element from the left out because the left side of the box is pushed out.
 
 5.Detail how the browser loads and bootstraps a rich web application from an initial URL.
+
+Browser:
+1.User navigates to a URL in the browser and the browser goes to the DNS.
+2.Browser makes TCP connection to server IP and designated port associated with that URL. The protocols tell where the files to load the website are located in the server.
+3.An application server listening at that ip address accepts connection from browser.
+4.Browser sends HTTP request over the open TCP connection.
+5.The application server parses the request and responds to the browser over the same TCP connection, delivering the files needed.
+
+Loading the Web App:
+1.First HTTP request loads initial assets (HTML, CSS, JavaScript or Multimedia files)
+2.As files are loaded browser parses each and runs commands contained therein.
+3.Some commands can call back to server for more assets.
+4.This goes on till all assets are collected.
