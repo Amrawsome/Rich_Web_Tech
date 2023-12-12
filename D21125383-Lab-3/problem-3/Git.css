@@ -69,6 +69,10 @@
     width: 50vw;
 }
 
+#repo_list p{
+    margin-left: 6px;
+}
+
 #UP_title{
     width: 20vw;
 }

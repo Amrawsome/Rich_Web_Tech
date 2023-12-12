@@ -71,7 +71,37 @@ The Learning curve on streams is steep due to its complexity
 
 4.With the aid of a diagram and example code, describe the Cascading Style Sheets (CSS) Box Model and show how it can be used to space DOM elements
 
+The CSS Box Model is in essence a box that wraps around all html elements. Content, padding,borders and margins is what it consists of as seen in the picture below.
+
 
  ![css_box_model](css_box_model.png)
+
+
+
+ HTML:
+<!DOCTYPE HTML>
+<html lang="en">
+<head>    
+ <meta charset="UTF-8">   
+<div>
+<p>Name: 30daysoflaptops.github.io</p>
+<p>Description: null</p>
+</div>   
+</body>
+</html>
+
+Before
+![box_model_1](box_model_1.png)
+
+CSS:
+#repo_list p{
+    margin-left: 6px;
+}
+
+
+After
+![box_model_2](box_model_2.png)
+
+As you can see from the pitures above the text is attached to the left side but when you add margin styling to the element it pushes the element from the left out because the left side of the box is pushed out.
 
 5.Detail how the browser loads and bootstraps a rich web application from an initial URL.
