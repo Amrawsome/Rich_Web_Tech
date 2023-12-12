@@ -111,6 +111,7 @@ element from the left out because the left side of the box is pushed out.
 
 Browser:
 1.User navigates to a URL in the browser and the browser goes to the DNS.
+
 2.Browser makes TCP connection to server IP and designated port associated with that URL. The protocols tell where the files to load the website are located in the server.
 3.An application server listening at that ip address accepts connection from browser.
 4.Browser sends HTTP request over the open TCP connection.
